@@ -1,0 +1,52 @@
+﻿@page "/albums"
+@using AlbumRanker.Web.DTOs.Albums
+@using AlbumRanker.Web.Services
+@inject AlbumApiService AlbumApiService
+
+<h3>Álbumes</h3>
+
+@if (albums == null)
+{
+    <p>Cargando...</p>
+}
+else if (!albums.Any())
+{
+    <p>No hay álbumes cargados.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Artista</th>
+                <th>Año</th>
+                <th>Promedio</th>
+                <th>Canciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var album in albums)
+            {
+                <tr>
+                    <td>
+                        <a href="/albums/@album.Id">@album.Titulo</a>
+                    </td>
+                    <td>@album.Artista</td>
+                    <td>@album.Anio</td>
+                    <td>@album.Promedio</td>
+                    <td>@album.CantidadCanciones</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<AlbumListadoDTO>? albums;
+
+    protected override async Task OnInitializedAsync()
+    {
+        albums = await AlbumApiService.GetAll();
+    }
+}

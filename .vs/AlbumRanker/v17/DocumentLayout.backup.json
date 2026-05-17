@@ -1,0 +1,526 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\services\\artistaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\services\\artistaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\controllers\\albumescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\controllers\\albumescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\artistas\\artistadetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\artistas\\artistadetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\services\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\services\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\albumes\\crearalbumdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\albumes\\crearalbumdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\albumes\\albumlistadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\albumes\\albumlistadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\albumes\\albumdetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\albumes\\albumdetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\albumes\\actualizaralbumdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\albumes\\actualizaralbumdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\repositories\\albumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\repositories\\albumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\controllers\\artistascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\controllers\\artistascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\repositories\\interfaces\\iartistarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\repositories\\interfaces\\iartistarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\repositories\\artistarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\repositories\\artistarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\entities\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\entities\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\entities\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\migrations\\20260516034648_albumsporalbumes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\migrations\\20260516034648_albumsporalbumes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\entities\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\entities\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\albumranker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\albumranker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\repositories\\interfaces\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\repositories\\interfaces\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\artistas\\artistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\artistas\\artistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\repositories\\interfaces\\icancionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\repositories\\interfaces\\icancionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\services\\cancionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\services\\cancionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\controllers\\cancionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\controllers\\cancionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\repositories\\cancionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\repositories\\cancionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\canciones\\actualizarcanciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\canciones\\actualizarcanciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\canciones\\crearcanciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\canciones\\crearcanciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\canciones\\canciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\canciones\\canciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\migrations\\20260515191600_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\migrations\\20260515191600_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|c:\\users\\puchu\\source\\repos\\albumranker\\albumranker\\dtos\\artistas\\crearartistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199AF14A-A89D-41E9-82F4-9B6F7C48BD8B}|AlbumRanker\\AlbumRanker.Api.csproj|solutionrelative:albumranker\\dtos\\artistas\\crearartistadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CrearAlbumDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\CrearAlbumDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Albumes\\CrearAlbumDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\CrearAlbumDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Albumes\\CrearAlbumDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:03:55.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlbumesController.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Controllers\\AlbumesController.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Controllers\\AlbumesController.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Controllers\\AlbumesController.cs",
+              "RelativeToolTip": "AlbumRanker\\Controllers\\AlbumesController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAnwEoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:33:10.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArtistaService.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Services\\ArtistaService.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Services\\ArtistaService.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Services\\ArtistaService.cs",
+              "RelativeToolTip": "AlbumRanker\\Services\\ArtistaService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAArwCYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:57:32.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlbumService.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Services\\AlbumService.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Services\\AlbumService.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Services\\AlbumService.cs",
+              "RelativeToolTip": "AlbumRanker\\Services\\AlbumService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:22:25.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArtistaDetalleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Artistas\\ArtistaDetalleDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Artistas\\ArtistaDetalleDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Artistas\\ArtistaDetalleDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Artistas\\ArtistaDetalleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T21:05:04.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlbumListadoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\AlbumListadoDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Albumes\\AlbumListadoDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\AlbumListadoDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Albumes\\AlbumListadoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:02:45.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AlbumDetalleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\AlbumDetalleDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Albumes\\AlbumDetalleDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\AlbumDetalleDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Albumes\\AlbumDetalleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:03:30.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ActualizarAlbumDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\ActualizarAlbumDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Albumes\\ActualizarAlbumDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Albumes\\ActualizarAlbumDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Albumes\\ActualizarAlbumDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:44:36.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Artista.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Entities\\Artista.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Entities\\Artista.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Entities\\Artista.cs",
+              "RelativeToolTip": "AlbumRanker\\Entities\\Artista.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:37:59.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ArtistasController.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Controllers\\ArtistasController.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Controllers\\ArtistasController.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Controllers\\ArtistasController.cs",
+              "RelativeToolTip": "AlbumRanker\\Controllers\\ArtistasController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:57:12.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlbumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\AlbumRepository.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Repositories\\AlbumRepository.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\AlbumRepository.cs",
+              "RelativeToolTip": "AlbumRanker\\Repositories\\AlbumRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:21:24.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IArtistaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\Interfaces\\IArtistaRepository.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Repositories\\Interfaces\\IArtistaRepository.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\Interfaces\\IArtistaRepository.cs",
+              "RelativeToolTip": "AlbumRanker\\Repositories\\Interfaces\\IArtistaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:48:40.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ArtistaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\ArtistaRepository.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Repositories\\ArtistaRepository.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\ArtistaRepository.cs",
+              "RelativeToolTip": "AlbumRanker\\Repositories\\ArtistaRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAD4vxoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:48:24.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Album.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Entities\\Album.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Entities\\Album.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Entities\\Album.cs",
+              "RelativeToolTip": "AlbumRanker\\Entities\\Album.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:34:18.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Cancion.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Entities\\Cancion.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Entities\\Cancion.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Entities\\Cancion.cs",
+              "RelativeToolTip": "AlbumRanker\\Entities\\Cancion.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:34:25.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20260516034648_AlbumsPorAlbumes.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Migrations\\20260516034648_AlbumsPorAlbumes.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Migrations\\20260516034648_AlbumsPorAlbumes.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Migrations\\20260516034648_AlbumsPorAlbumes.cs",
+              "RelativeToolTip": "AlbumRanker\\Migrations\\20260516034648_AlbumsPorAlbumes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T03:46:48.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AlbumRanker\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:32:50.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Program.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Program.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Program.cs",
+              "RelativeToolTip": "AlbumRanker\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAmwC0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:14:04.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AlbumRanker.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\AlbumRanker.Api.csproj",
+              "RelativeDocumentMoniker": "AlbumRanker\\AlbumRanker.Api.csproj",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\AlbumRanker.Api.csproj",
+              "RelativeToolTip": "AlbumRanker\\AlbumRanker.Api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-15T18:32:25.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAlbumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\Interfaces\\IAlbumRepository.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Repositories\\Interfaces\\IAlbumRepository.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\Interfaces\\IAlbumRepository.cs",
+              "RelativeToolTip": "AlbumRanker\\Repositories\\Interfaces\\IAlbumRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:22:00.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ArtistaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Artistas\\ArtistaDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Artistas\\ArtistaDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Artistas\\ArtistaDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Artistas\\ArtistaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:53:21.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICancionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\Interfaces\\ICancionRepository.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Repositories\\Interfaces\\ICancionRepository.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\Interfaces\\ICancionRepository.cs",
+              "RelativeToolTip": "AlbumRanker\\Repositories\\Interfaces\\ICancionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:01:45.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CancionService.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Services\\CancionService.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Services\\CancionService.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Services\\CancionService.cs",
+              "RelativeToolTip": "AlbumRanker\\Services\\CancionService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:05:26.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CancionesController.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Controllers\\CancionesController.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Controllers\\CancionesController.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Controllers\\CancionesController.cs",
+              "RelativeToolTip": "AlbumRanker\\Controllers\\CancionesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBYAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T18:33:19.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CancionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\CancionRepository.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Repositories\\CancionRepository.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Repositories\\CancionRepository.cs",
+              "RelativeToolTip": "AlbumRanker\\Repositories\\CancionRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T20:02:37.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ActualizarCancionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Canciones\\ActualizarCancionDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Canciones\\ActualizarCancionDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Canciones\\ActualizarCancionDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Canciones\\ActualizarCancionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:07:17.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CrearCancionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Canciones\\CrearCancionDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Canciones\\CrearCancionDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Canciones\\CrearCancionDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Canciones\\CrearCancionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:06:55.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CancionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Canciones\\CancionDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Canciones\\CancionDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Canciones\\CancionDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Canciones\\CancionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:06:33.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260515191600_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Migrations\\20260515191600_InitialCreate.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\Migrations\\20260515191600_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\Migrations\\20260515191600_InitialCreate.cs",
+              "RelativeToolTip": "AlbumRanker\\Migrations\\20260515191600_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:16:00.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\appsettings.json",
+              "RelativeDocumentMoniker": "AlbumRanker\\appsettings.json",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\appsettings.json",
+              "RelativeToolTip": "AlbumRanker\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-15T19:13:18.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CrearArtistaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Artistas\\CrearArtistaDTO.cs",
+              "RelativeDocumentMoniker": "AlbumRanker\\DTOs\\Artistas\\CrearArtistaDTO.cs",
+              "ToolTip": "C:\\Users\\puchu\\source\\repos\\AlbumRanker\\AlbumRanker\\DTOs\\Artistas\\CrearArtistaDTO.cs",
+              "RelativeToolTip": "AlbumRanker\\DTOs\\Artistas\\CrearArtistaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T19:05:25.285Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

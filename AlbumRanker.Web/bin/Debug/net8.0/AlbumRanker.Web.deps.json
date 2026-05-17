@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AlbumRanker.Web/1.0.0": {
+        "runtime": {
+          "AlbumRanker.Web.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AlbumRanker.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

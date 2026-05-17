@@ -1,0 +1,6 @@
+@AlbumRanker_HostAddress = http://localhost:5028
+
+GET {{AlbumRanker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
