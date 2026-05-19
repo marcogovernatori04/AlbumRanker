@@ -96,8 +96,8 @@ async function guardarNuevaCancion() {
 
 <template>
   <section>
-    <RouterLink to="/albumes" class="mb-6 inline-block text-sm text-neutral-400 hover:text-white">
-      ← Volver a álbumes
+    <RouterLink to="/albumes" class="terminal-link mb-4 inline-block">
+      ../albumes
     </RouterLink>
 
     <p v-if="loading" class="text-neutral-400">Cargando...</p>
@@ -107,41 +107,42 @@ async function guardarNuevaCancion() {
     </p>
 
     <div v-else-if="album">
-      <div class="mb-8 rounded-2xl border border-neutral-800 bg-neutral-900 p-6">
-        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-          <div class="flex flex-col gap-6 sm:flex-row">
-            <div class="h-40 w-40 shrink-0 overflow-hidden rounded-2xl bg-neutral-800">
+      <div class="terminal-panel mb-6 p-4">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <div class="h-24 w-24 shrink-0 overflow-hidden border border-neutral-800 bg-black">
               <img v-if="album.urlPortada" :src="album.urlPortada" :alt="album.titulo"
                 class="h-full w-full object-cover" />
 
-              <div v-else class="flex h-full w-full items-center justify-center text-5xl font-bold text-neutral-500">
+              <div v-else class="flex h-full w-full items-center justify-center text-2xl font-bold text-lime-200">
                 {{ album.titulo.charAt(0) }}
               </div>
             </div>
 
             <div class="min-w-0">
-              <h2 class="break-words text-4xl font-bold text-white">
+              <p class="text-xs uppercase tracking-[0.12em] text-neutral-500">album.detail</p>
+              <h2 class="break-words text-2xl font-bold text-white">
                 {{ album.titulo }}
               </h2>
 
-              <p class="mt-2 text-lg text-neutral-400">
-                {{ album.artista }}
+              <p class="mt-1 text-sm text-neutral-400">
+                por {{ album.artista }}
               </p>
 
-              <div class="mt-4 flex flex-wrap gap-3 text-sm text-neutral-400">
-                <span class="rounded-full bg-neutral-800 px-3 py-1">
-                  {{ album.anio ?? 'Sin año' }}
+              <div class="mt-3 flex flex-wrap gap-2 text-sm text-neutral-500">
+                <span class="border border-neutral-800 px-2 py-1">
+                  anio={{ album.anio ?? 'null' }}
                 </span>
 
-                <span class="rounded-full bg-neutral-800 px-3 py-1">
-                  {{ album.canciones.length }} canciones
+                <span class="border border-neutral-800 px-2 py-1">
+                  canciones={{ album.canciones.length }}
                 </span>
               </div>
             </div>
           </div>
 
           <div :class="[
-            'flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl text-2xl font-bold',
+            'flex h-14 min-w-20 shrink-0 items-center justify-center border px-4 text-xl font-bold',
             clasePuntuacion(album.promedio)
           ]">
             {{ formatearPuntuacion(album.promedio) }}
@@ -149,116 +150,141 @@ async function guardarNuevaCancion() {
         </div>
       </div>
 
-      <div class="mb-4 flex items-center justify-between">
-        <h3 class="text-lg font-semibold text-white">Canciones</h3>
+      <div class="mb-3 flex flex-col gap-3 border-b border-neutral-800 pb-3 sm:flex-row sm:items-center sm:justify-between">
+        <h3 class="terminal-heading">canciones</h3>
 
         <button type="button"
-          class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-neutral-950 hover:bg-neutral-200"
+          class="terminal-btn-primary"
           @click="prepNuevaCancion">
-          Nueva canción
+          + cancion
         </button>
       </div>
 
-      <form v-if="mostrarFormCancion" class="mb-5 rounded-2xl border border-neutral-800 bg-neutral-900 p-5"
+      <form v-if="mostrarFormCancion" class="terminal-panel mb-5 p-4"
         @submit.prevent="guardarNuevaCancion">
-        <div class="mb-4 flex items-center justify-between">
-          <h4 class="font-semibold text-white">Agregar canción</h4>
+        <div class="mb-3 flex items-center justify-between">
+          <h4 class="text-sm font-semibold uppercase tracking-[0.1em] text-white">agregar cancion</h4>
 
-          <button type="button" class="text-sm text-neutral-400 hover:text-white" @click="mostrarFormCancion = false">
-            Cancelar
+          <button type="button" class="terminal-link" @click="mostrarFormCancion = false">
+            cancelar
           </button>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-5">
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-5">
           <div>
-            <label class="mb-1 block text-sm text-neutral-400">#</label>
+            <label class="terminal-label">#</label>
             <input v-model="nuevaCancion.numeroPista" type="number"
-              class="h-10 w-full rounded-lg border border-neutral-800 bg-neutral-950 px-3 text-sm text-white outline-none focus:border-neutral-600" />
+              class="terminal-input" />
           </div>
 
           <div class="md:col-span-2">
-            <label class="mb-1 block text-sm text-neutral-400">Título</label>
+            <label class="terminal-label">titulo</label>
             <input v-model="nuevaCancion.titulo" type="text" required
-              class="h-10 w-full rounded-lg border border-neutral-800 bg-neutral-950 px-3 text-sm text-white outline-none focus:border-neutral-600" />
+              class="terminal-input" />
           </div>
 
           <div>
-            <label class="mb-1 block text-sm text-neutral-400">Duración</label>
+            <label class="terminal-label">duracion</label>
             <input v-model="nuevaCancion.duracionTexto" type="text" placeholder="3:45"
-              class="h-10 w-full rounded-lg border border-neutral-800 bg-neutral-950 px-3 text-sm text-white outline-none focus:border-neutral-600" />
+              class="terminal-input" />
           </div>
 
           <div>
-            <label class="mb-1 block text-sm text-neutral-400">Puntuación</label>
+            <label class="terminal-label">puntuacion</label>
             <input v-model="nuevaCancion.puntuacion" type="number" min="0" max="10" step="0.5"
-              class="h-10 w-full rounded-lg border border-neutral-800 bg-neutral-950 px-3 text-sm text-white outline-none focus:border-neutral-600" />
+              class="terminal-input" />
           </div>
         </div>
 
-        <div class="mt-4">
-          <label class="mb-1 block text-sm text-neutral-400">Nota</label>
+        <div class="mt-3">
+          <label class="terminal-label">nota</label>
           <input v-model="nuevaCancion.nota" type="text"
-            class="h-10 w-full rounded-lg border border-neutral-800 bg-neutral-950 px-3 text-sm text-white outline-none focus:border-neutral-600" />
+            class="terminal-input" />
         </div>
 
         <p v-if="errorCancion"
-          class="mt-4 rounded-lg border border-red-900 bg-red-950/40 px-4 py-3 text-sm text-red-300">
+          class="mt-3 border border-red-900 bg-red-950/40 px-3 py-2 text-sm text-red-300">
           {{ errorCancion }}
         </p>
 
-        <div class="mt-5 flex justify-end">
+        <div class="mt-3 flex justify-end">
           <button type="submit"
-            class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-neutral-950 hover:bg-neutral-200 disabled:opacity-60"
+            class="terminal-btn-primary"
             :disabled="guardandoCancion">
-            {{ guardandoCancion ? 'Guardando...' : 'Guardar canción' }}
+            {{ guardandoCancion ? 'guardando...' : 'guardar cancion' }}
           </button>
         </div>
       </form>
 
-      <div class="overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900">
-        <table class="w-full table-fixed border-collapse text-left">
-          <thead class="bg-neutral-950 text-sm text-neutral-400">
+      <div class="space-y-2 md:hidden">
+        <div v-for="cancion in album.canciones" :key="`mobile-${cancion.id}`"
+          class="terminal-panel grid grid-cols-[2rem_minmax(0,1fr)_3.5rem] items-center gap-3 p-3">
+          <span class="text-sm text-neutral-500">{{ cancion.numeroPista }}</span>
+
+          <div class="min-w-0">
+            <p class="truncate text-base font-medium text-white">{{ cancion.titulo }}</p>
+            <p class="mt-1 text-sm text-neutral-500">
+              {{ formatearDuracion(cancion.duracionSegundos) }} · {{ cancion.nota || 'sin nota' }}
+            </p>
+          </div>
+
+          <span :class="[
+            'inline-flex h-8 w-14 items-center justify-center border text-base font-semibold',
+            clasePuntuacion(cancion.puntuacion)
+          ]">
+            {{ formatearPuntuacion(cancion.puntuacion) }}
+          </span>
+        </div>
+
+        <div v-if="album.canciones.length === 0" class="terminal-panel px-4 py-8 text-center text-sm text-neutral-400">
+          Este álbum todavía no tiene canciones.
+        </div>
+      </div>
+
+      <div class="terminal-panel hidden overflow-x-auto md:block">
+        <table class="w-full min-w-[760px] table-fixed border-collapse text-left">
+          <thead class="bg-black text-sm uppercase tracking-[0.08em] text-neutral-500">
             <tr>
-              <th class="w-16 px-5 py-4 font-medium">#</th>
-              <th class="w-[45%] px-5 py-4 font-medium">Canción</th>
-              <th class="w-28 px-5 py-4 font-medium">Duración</th>
-              <th class="w-32 px-5 py-4 font-medium">Puntuación</th>
-              <th class="w-[25%] px-5 py-4 font-medium">Nota</th>
+              <th class="w-16 px-4 py-3 font-medium">#</th>
+              <th class="w-[45%] px-4 py-3 font-medium">cancion</th>
+              <th class="w-28 px-4 py-3 font-medium">duracion</th>
+              <th class="w-32 px-4 py-3 font-medium">puntuacion</th>
+              <th class="w-[25%] px-4 py-3 font-medium">nota</th>
             </tr>
           </thead>
 
           <tbody>
             <tr v-for="cancion in album.canciones" :key="cancion.id"
-              class="border-t border-neutral-800 hover:bg-neutral-800/60">
-              <td class="px-5 py-4 text-neutral-500">
+              class="border-t border-neutral-900 hover:bg-neutral-900/80">
+              <td class="px-4 py-3 text-sm text-neutral-500">
                 {{ cancion.numeroPista }}
               </td>
 
-              <td class="px-5 py-4 font-medium text-white">
+              <td class="px-4 py-3 text-base font-medium text-white">
                 {{ cancion.titulo }}
               </td>
 
-              <td class="px-5 py-4 text-neutral-400">
+              <td class="px-4 py-3 text-sm text-neutral-400">
                 {{ formatearDuracion(cancion.duracionSegundos) }}
               </td>
 
-              <td class="px-5 py-4">
+              <td class="px-4 py-3">
                 <span :class="[
-                  'inline-flex min-w-12 justify-center rounded-full px-3 py-1 font-semibold',
+                  'inline-flex min-w-14 justify-center border px-3 py-1 text-base font-semibold',
                   clasePuntuacion(cancion.puntuacion)
                 ]">
                   {{ formatearPuntuacion(cancion.puntuacion) }}
                 </span>
               </td>
 
-              <td class="px-5 py-4 text-neutral-400">
+              <td class="px-4 py-3 text-sm text-neutral-400">
                 {{ cancion.nota || '-' }}
               </td>
             </tr>
           </tbody>
         </table>
 
-        <div v-if="album.canciones.length === 0" class="px-5 py-8 text-center text-neutral-400">
+        <div v-if="album.canciones.length === 0" class="px-4 py-8 text-center text-sm text-neutral-400">
           Este álbum todavía no tiene canciones.
         </div>
       </div>

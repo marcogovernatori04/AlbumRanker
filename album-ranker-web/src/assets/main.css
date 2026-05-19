@@ -1,6 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
+:root {
+  color-scheme: dark;
+}
+
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family:
+    'JetBrains Mono', 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.014) 1px, transparent 1px),
+    #080a0b;
+  background-size: 22px 22px;
+}
+
+::selection {
+  background: #d7ff63;
+  color: #080a0b;
+}
+
+@layer components {
+  .terminal-panel {
+    @apply border border-neutral-800 bg-neutral-950/90;
+  }
+
+  .terminal-input {
+    @apply h-10 w-full border border-neutral-800 bg-black px-3 text-sm text-neutral-100 outline-none placeholder:text-neutral-600 focus:border-lime-300;
+  }
+
+  .terminal-btn {
+    @apply inline-flex h-10 items-center justify-center border border-neutral-700 px-4 text-sm font-semibold uppercase tracking-[0.06em] text-neutral-200 hover:border-lime-300 hover:text-lime-200 disabled:cursor-not-allowed disabled:opacity-45;
+  }
+
+  .terminal-btn-primary {
+    @apply inline-flex h-10 items-center justify-center border border-lime-300 bg-lime-300 px-4 text-sm font-bold uppercase tracking-[0.06em] text-black hover:bg-lime-200 disabled:cursor-not-allowed disabled:opacity-45;
+  }
+
+  .terminal-link {
+    @apply text-sm uppercase tracking-[0.06em] text-neutral-400 hover:text-lime-200;
+  }
+
+  .terminal-label {
+    @apply mb-1.5 block text-sm font-semibold uppercase tracking-[0.08em] text-neutral-500;
+  }
+
+  .terminal-heading {
+    @apply text-lg font-bold uppercase tracking-[0.12em] text-neutral-100;
+  }
 }

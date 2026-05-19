@@ -37,21 +37,21 @@ onMounted(async () => {
 
 <template>
 	<section>
-		<div class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+		<div class="mb-5 flex flex-col gap-4 border-b border-neutral-800 pb-4 lg:flex-row lg:items-center lg:justify-between">
 			<div>
-				<h2 class="text-2xl font-bold text-white">Mis álbumes</h2>
+				<h2 class="terminal-heading">~/albumes</h2>
 				<p class="mt-1 text-sm text-neutral-500">
-					{{ albumesFiltrados.length }} álbumes
+					{{ albumesFiltrados.length }} registros indexados
 				</p>
 			</div>
 
-			<div class="flex w-full flex-col gap-3 sm:flex-row lg:w-auto">
+			<div class="flex w-full flex-col gap-2 sm:flex-row lg:w-auto">
 				<input v-model="busqueda" type="text" placeholder="Buscar álbum, artista o año..."
-					class="h-10 w-full rounded-lg border border-neutral-800 bg-neutral-900 px-3 text-sm text-white placeholder:text-neutral-600 outline-none focus:border-neutral-600 sm:w-80" />
+					class="terminal-input sm:w-80" />
 
 				<RouterLink to="/albumes/create"
-					class="inline-flex h-10 items-center justify-center rounded-lg bg-white px-4 text-sm font-semibold text-neutral-950 hover:bg-neutral-200">
-					Nuevo álbum
+					class="terminal-btn-primary">
+					+ album
 				</RouterLink>
 			</div>
 		</div>
@@ -60,26 +60,32 @@ onMounted(async () => {
 		<p v-else-if="error" class="text-red-400">{{ error }}</p>
 		<p v-else-if="albumesFiltrados.length === 0" class="text-neutral-400">No se encontraron álbumes.</p>
 
-		<div v-else class="grid grid-cols-1 gap-4 md:grid-cols-2">
+		<div v-else class="terminal-panel overflow-hidden">
 			<RouterLink v-for="album in albumesFiltrados" :key="album.id" :to="`/albumes/${album.id}`"
-				class="flex items-center gap-4 rounded-2xl border border-neutral-800 bg-neutral-900 p-4 transition hover:-translate-y-1 hover:bg-neutral-800">
+				class="grid grid-cols-[3rem_minmax(0,1fr)_5rem] items-center gap-4 border-b border-neutral-900 px-4 py-3 last:border-b-0 hover:bg-neutral-900/80 sm:grid-cols-[3.5rem_minmax(0,1fr)_9rem_5rem]">
 				<div
-					class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-neutral-800 text-2xl font-bold">
+					class="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden border border-neutral-800 bg-black text-sm font-bold text-lime-200">
 					<img v-if="album.urlPortada" :src="album.urlPortada" :alt="album.titulo"
 						class="h-full w-full object-cover" />
 					<span v-else>{{ album.titulo.charAt(0) }}</span>
 				</div>
 
 				<div class="min-w-0 flex-1">
-					<h3 class="truncate text-lg font-semibold">{{ album.titulo }}</h3>
-					<p class="text-neutral-400">{{ album.artista }}</p>
-					<p class="text-sm text-neutral-500">
-						{{ album.anio ?? 'Sin año' }} · {{ album.cantidadCanciones }} canciones
+					<h3 class="truncate text-base font-semibold text-neutral-100">{{ album.titulo }}</h3>
+					<p class="truncate text-sm text-neutral-500">{{ album.artista }}</p>
+					<p class="mt-1 text-xs text-neutral-600 sm:hidden">
+						{{ album.anio ?? 's/a' }} / {{ album.cantidadCanciones }} canciones
+					</p>
+				</div>
+
+				<div class="hidden text-sm text-neutral-500 sm:block">
+					<p>
+						{{ album.anio ?? 's/a' }} / {{ album.cantidadCanciones }} canciones
 					</p>
 				</div>
 
 				<div :class="[
-					'flex h-10 w-10 items-center justify-center rounded-full text-l font-bold',
+					'flex h-8 min-w-16 items-center justify-center border px-3 text-base font-bold',
 					clasePuntuacion(album.promedio)
 				]">
 					{{ formatearPuntuacion(album.promedio) }}

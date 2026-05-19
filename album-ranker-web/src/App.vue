@@ -1,24 +1,26 @@
 <template>
-  <div class="min-h-screen bg-neutral-950 text-white">
-    <header class="border-b border-neutral-800 bg-neutral-900/80">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <nav class="flex items-center gap-4 text-sm">
-          <RouterLink to="/albumes" class="text-neutral-300 hover:text-white">
-            Álbumes
-          </RouterLink>
-
-          <RouterLink to="/comparativas" class="text-neutral-300 hover:text-white">
-            Comparativas
-          </RouterLink>
-        </nav>
-        <RouterLink to="/albumes" class="text-xl font-bold">
-          Album Ranker
+  <div class="min-h-screen text-neutral-100">
+    <header class="border-b border-neutral-800 bg-black/80">
+      <div class="mx-auto flex max-w-7xl flex-col items-start gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+        <RouterLink to="/albumes" class="text-base font-bold uppercase tracking-[0.18em] text-lime-200">
+          ./albumranker
         </RouterLink>
 
+        <nav class="flex w-full items-center gap-2 sm:w-auto">
+          <RouterLink to="/albumes" class="terminal-link">
+            ./albumes
+          </RouterLink>
+
+          <span class="text-neutral-700">|</span>
+
+          <RouterLink to="/comparativas" class="terminal-link">
+            ./comparar
+          </RouterLink>
+        </nav>
       </div>
     </header>
 
-    <main class="mx-auto max-w-6xl px-6 py-8">
+    <main class="mx-auto max-w-7xl px-5 py-6">
       <RouterView />
     </main>
   </div>

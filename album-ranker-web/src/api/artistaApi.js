@@ -1,7 +1,7 @@
-import axios from "axios";
+import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://localhost:7293/api'
+  baseURL: import.meta.env.VITE_API_URL,
 })
 
 export async function getArtistas() {

@@ -55,8 +55,8 @@ function getCancionPorIndice(album, index) {
 
 <template>
   <section>
-    <RouterLink to="/comparativas" class="mb-6 inline-block text-sm text-neutral-400 hover:text-white">
-      ← Volver a comparativas
+    <RouterLink to="/comparativas" class="terminal-link mb-4 inline-block">
+      ../comparar
     </RouterLink>
 
     <p v-if="loading" class="text-neutral-400">Cargando...</p>
@@ -66,44 +66,44 @@ function getCancionPorIndice(album, index) {
     </p>
 
     <div v-else>
-      <div class="mb-6">
-        <h2 class="text-2xl font-bold text-white">
+      <div class="mb-5 border-b border-neutral-800 pb-4">
+        <h2 class="terminal-heading">
           {{ artista?.nombre }}
         </h2>
 
         <p class="mt-1 text-sm text-neutral-500">
-          Comparativa de puntuaciones por álbum
+          matriz de puntuaciones por album
         </p>
       </div>
 
       <div v-if="albumes.length === 0"
-        class="rounded-2xl border border-neutral-800 bg-neutral-900 p-6 text-neutral-400">
+        class="terminal-panel p-5 text-sm text-neutral-400">
         Este artista no tiene álbumes cargados.
       </div>
 
-      <div v-else class="overflow-x-auto rounded-2xl border border-neutral-800 bg-neutral-900">
-        <table class="min-w-full border-collapse text-center">
+      <div v-else class="terminal-panel overflow-x-auto [scrollbar-width:thin]">
+        <table class="min-w-max border-collapse text-center">
           <thead>
-            <tr class="border-b border-neutral-800 bg-neutral-950">
+            <tr class="border-b border-neutral-800 bg-black">
               <th
-                class="sticky left-0 z-10 w-24 bg-neutral-950 px-4 py-4 text-left text-sm font-medium text-neutral-400">
-                Track
+                class="sticky left-0 z-10 w-20 bg-black px-3 py-3 text-left text-sm font-medium uppercase tracking-[0.08em] text-neutral-500">
+                cancion
               </th>
 
-              <th v-for="album in albumes" :key="album.id" class="w-24 min-w-24 px-2 py-3 align-top">
-                <div class="flex flex-col items-center gap-2">
-                  <div class="h-16 w-16 overflow-hidden rounded-lg bg-neutral-800"
+              <th v-for="album in albumes" :key="album.id" class="w-20 min-w-20 px-1.5 py-3 align-top">
+                <div class="flex flex-col items-center gap-1">
+                  <div class="h-15 w-15 overflow-hidden border border-neutral-800 bg-black"
                     :title="`${album.titulo} (${album.anio ?? 'Sin año'})`">
                     <img v-if="album.urlPortada" :src="album.urlPortada" :alt="album.titulo"
                       class="h-full w-full object-cover" />
 
                     <div v-else
-                      class="flex h-full w-full items-center justify-center text-2xl font-bold text-neutral-500">
+                      class="flex h-full w-full items-center justify-center text-base font-bold text-lime-200">
                       {{ album.titulo.charAt(0) }}
                     </div>
                   </div>
 
-                  <p class="text-[11px] text-neutral-500">
+                  <p class="text-xs text-neutral-500">
                     {{ album.anio ?? '' }}
                   </p>
                 </div>
@@ -112,16 +112,16 @@ function getCancionPorIndice(album, index) {
           </thead>
 
           <tbody>
-            <tr v-for="index in maxCanciones" :key="index" class="border-b border-neutral-800 hover:bg-neutral-800/40">
-              <td class="sticky left-0 z-10 bg-neutral-900 px-4 py-3 text-left text-sm text-neutral-500">
+            <tr v-for="index in maxCanciones" :key="index" class="border-b border-neutral-900 hover:bg-neutral-900/80">
+              <td class="sticky left-0 z-10 bg-neutral-950 px-3 py-3 text-left text-sm text-neutral-500">
                 {{ index }}
               </td>
 
-              <td v-for="album in albumes" :key="`${album.id}-${index}`" class="px-4 py-3">
+              <td v-for="album in albumes" :key="`${album.id}-${index}`" class="px-1 py-3">
                 <template v-if="getCancionPorIndice(album, index - 1)">
                   <div class="flex justify-center">
                     <span :title="getCancionPorIndice(album, index - 1).titulo" :class="[
-                      'inline-flex min-w-12 justify-center rounded-full px-3 py-1 text-sm font-semibold',
+                      'inline-flex h-8 w-12 items-center justify-center border text-base font-semibold',
                       clasePuntuacion(getCancionPorIndice(album, index - 1).puntuacion)
                     ]">
                       {{ formatearPuntuacion(getCancionPorIndice(album, index - 1).puntuacion) }}
@@ -135,15 +135,15 @@ function getCancionPorIndice(album, index) {
           </tbody>
 
           <tfoot>
-            <tr class="bg-neutral-950">
-              <td class="sticky left-0 z-10 bg-neutral-950 px-4 py-4 text-left text-sm font-semibold text-neutral-300">
-                Promedio
+            <tr class="bg-black">
+              <td class="sticky left-0 z-10 bg-black px-3 py-3 text-left text-sm font-semibold uppercase tracking-[0.08em] text-neutral-300">
+                promedio
               </td>
 
-              <td v-for="album in albumes" :key="`promedio-${album.id}`" class="px-4 py-4">
+              <td v-for="album in albumes" :key="`promedio-${album.id}`" class="px-1.5 py-3">
                 <div class="flex justify-center">
                   <span :class="[
-                    'inline-flex min-w-14 justify-center rounded-full px-3 py-1 text-sm font-bold',
+                    'inline-flex h-8 w-14 items-center justify-center border text-base font-bold',
                     clasePuntuacion(album.promedio)
                   ]">
                     {{ formatearPuntuacion(album.promedio) }}

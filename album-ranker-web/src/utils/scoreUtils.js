@@ -13,28 +13,28 @@ export function clasePuntuacion(puntuacion) {
     }
 
     if (puntuacion >= 9.75) {
-        return 'bg-[#20a0ed] text-white'
+        return 'bg-[#0E6EAA] text-white'
     }
 
     if (puntuacion >= 9) {
-        return 'bg-[#176a3a] text-white'
+        return 'bg-[#166437] text-white'
     }
 
     if (puntuacion >= 8) {
-        return 'bg-[#2eb161] text-white'
+        return 'bg-[#32C36A] text-neutral-950'
     }
 
     if (puntuacion >= 7) {
-        return 'bg-[#f3d03c] text-neutral-950'
+        return 'bg-[#F2CD2C] text-neutral-950'
     }
 
     if (puntuacion >= 6) {
-        return 'bg-[#f59b0f] text-neutral-950'
+        return 'bg-[#EB950A] text-neutral-950'
     }
 
     if (puntuacion >= 5) {
-        return 'bg-[#e64d3b] text-white'
+        return 'bg-[#E33926] text-white'
     }
 
-    return 'bg-[#613976] text-white'
+    return 'bg-[#8B0000] text-white'
 }
