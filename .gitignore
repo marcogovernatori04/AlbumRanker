@@ -1,0 +1,28 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Vue / Node
+node_modules/
+dist/
+.env
+.env.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
