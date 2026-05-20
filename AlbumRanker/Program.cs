@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVue", policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "http://localhost:5028")
+        policy.WithOrigins("http://localhost:5173", "http://localhost:5028", "https://album-ranker-beta.vercel.app")
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
