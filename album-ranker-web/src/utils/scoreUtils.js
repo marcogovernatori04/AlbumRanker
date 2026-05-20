@@ -13,11 +13,11 @@ export function clasePuntuacion(puntuacion) {
     }
 
     if (puntuacion >= 9.75) {
-        return 'bg-[#0E6EAA] text-white'
+        return 'bg-[#0B3326] text-yellow-300 font-bold'
     }
 
     if (puntuacion >= 9) {
-        return 'bg-[#166437] text-white'
+        return 'bg-[#166437] text-white border-[#000000]'
     }
 
     if (puntuacion >= 8) {
@@ -33,8 +33,8 @@ export function clasePuntuacion(puntuacion) {
     }
 
     if (puntuacion >= 5) {
-        return 'bg-[#E33926] text-white'
+        return 'bg-[#E33926] text-white border-[#000000]'
     }
 
-    return 'bg-[#8B0000] text-white'
+    return 'bg-[#6C180E] text-white border-[#000000]'
 }

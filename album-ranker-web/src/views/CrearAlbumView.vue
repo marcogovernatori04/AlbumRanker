@@ -8,31 +8,38 @@ const router = useRouter()
 
 const loading = ref(false)
 const error = ref(null)
+const cantidadCancionesAAgregar = ref(1)
 
 const album = ref({
   titulo: '',
   nombreArtista: '',
   anio: null,
   urlPortada: '',
-  canciones: [
-    {
-      numeroPista: 1,
-      titulo: '',
-      duracionTexto: 0,
-      puntuacion: null,
-      nota: '',
-    },
-  ],
+  canciones: [],
 })
 
-function agregarCancion() {
-  album.value.canciones.push({
-    numeroPista: album.value.canciones.length + 1,
+function crearCancionVacia(numeroPista) {
+  return {
+    numeroPista,
     titulo: '',
     duracionTexto: '',
     puntuacion: null,
     nota: '',
-  })
+  }
+}
+
+function agregarCanciones(cantidad = 1) {
+  const total = Math.max(1, Math.min(Number(cantidad) || 1, 99))
+
+  for (let i = 0; i < total; i += 1) {
+    album.value.canciones.push(crearCancionVacia(album.value.canciones.length + 1))
+  }
+
+  cantidadCancionesAAgregar.value = 1
+}
+
+function agregarCancion() {
+  agregarCanciones(1)
 }
 
 function eliminarCancion(index) {
@@ -40,6 +47,37 @@ function eliminarCancion(index) {
   album.value.canciones.forEach((cancion, i) => {
     cancion.numeroPista = i + 1
   })
+}
+
+function formatearDuracionInput(cancion) {
+  const valor = String(cancion.duracionTexto ?? '').trim()
+
+  if (!valor) {
+    cancion.duracionTexto = ''
+    return
+  }
+
+  if (valor.includes(':')) {
+    const [minutos = '', segundos = ''] = valor.split(':')
+    cancion.duracionTexto = `${Number(minutos) || 0}:${segundos.padStart(2, '0').slice(0, 2)}`
+    return
+  }
+
+  const soloNumeros = valor.replace(/\D/g, '')
+
+  if (!soloNumeros) {
+    cancion.duracionTexto = ''
+    return
+  }
+
+  if (soloNumeros.length <= 2) {
+    cancion.duracionTexto = `0:${soloNumeros.padStart(2, '0')}`
+    return
+  }
+
+  const minutos = soloNumeros.slice(0, -2)
+  const segundos = soloNumeros.slice(-2)
+  cancion.duracionTexto = `${Number(minutos)}:${segundos}`
 }
 
 
@@ -111,7 +149,7 @@ async function guardarAlbum() {
           </div>
 
           <div>
-            <label class="terminal-label">anio</label>
+            <label class="terminal-label">año</label>
             <input v-model="album.anio" type="number"
               class="terminal-input" />
           </div>
@@ -125,17 +163,15 @@ async function guardarAlbum() {
       </div>
 
       <div class="terminal-panel p-4">
-        <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div class="mb-4 flex items-center justify-between">
           <h3 class="text-sm font-semibold uppercase tracking-[0.1em] text-white">canciones</h3>
-
-          <button type="button"
-            class="terminal-btn"
-            @click="agregarCancion">
-            + cancion
-          </button>
         </div>
 
         <div class="space-y-3 lg:hidden">
+          <div v-if="album.canciones.length === 0" class="border border-neutral-900 bg-black/50 p-4 text-sm text-neutral-500">
+            Todavía no hay filas. Indicá una cantidad abajo y agregá canciones.
+          </div>
+
           <div v-for="(cancion, index) in album.canciones" :key="`mobile-${index}`"
             class="border border-neutral-900 bg-black/50 p-3">
             <div class="mb-3 flex items-center justify-between">
@@ -149,10 +185,12 @@ async function guardarAlbum() {
               </button>
             </div>
 
-            <div class="grid grid-cols-2 gap-3">
+            <div class="grid grid-cols-[5rem_minmax(0,1fr)] gap-3">
               <div>
                 <label class="terminal-label">#</label>
-                <input v-model="cancion.numeroPista" type="number" class="terminal-input" />
+                <div class="flex h-10 items-center border border-neutral-800 bg-black px-3 text-sm text-neutral-300">
+                  {{ cancion.numeroPista }}
+                </div>
               </div>
 
               <div>
@@ -168,7 +206,8 @@ async function guardarAlbum() {
 
               <div>
                 <label class="terminal-label">duracion</label>
-                <input v-model="cancion.duracionTexto" type="number" class="terminal-input" placeholder="seg." />
+                <input v-model="cancion.duracionTexto" type="text" inputmode="numeric" pattern="[0-9]*:?[0-9]{0,2}"
+                  class="terminal-input" placeholder="3:45" @blur="formatearDuracionInput(cancion)" />
               </div>
 
               <div>
@@ -179,11 +218,15 @@ async function guardarAlbum() {
           </div>
         </div>
 
-        <div class="hidden overflow-x-auto lg:block">
+        <div v-if="album.canciones.length === 0" class="hidden border border-neutral-900 bg-black/50 p-4 text-sm text-neutral-500 lg:block">
+          Todavía no hay filas. Indicá una cantidad abajo y agregá canciones.
+        </div>
+
+        <div v-else class="hidden overflow-x-auto lg:block">
           <table class="w-full min-w-[900px] table-fixed border-collapse text-left">
             <thead class="bg-black text-sm uppercase tracking-[0.08em] text-neutral-500">
               <tr>
-                <th class="w-16 px-3 py-3 font-medium">#</th>
+                <th class="w-24 px-3 py-3 font-medium">#</th>
                 <th class="w-[32%] px-3 py-3 font-medium">titulo</th>
                 <th class="w-32 px-3 py-3 font-medium">duracion</th>
                 <th class="w-32 px-3 py-3 font-medium">puntuacion</th>
@@ -195,8 +238,9 @@ async function guardarAlbum() {
             <tbody>
               <tr v-for="(cancion, index) in album.canciones" :key="index" class="border-t border-neutral-900">
                 <td class="px-3 py-3">
-                  <input v-model="cancion.numeroPista" type="number"
-                    class="terminal-input" />
+                  <div class="flex h-10 items-center border border-neutral-800 bg-black px-3 text-sm text-neutral-300">
+                    {{ cancion.numeroPista }}
+                  </div>
                 </td>
 
                 <td class="px-3 py-3">
@@ -205,9 +249,9 @@ async function guardarAlbum() {
                 </td>
 
                 <td class="px-3 py-3">
-                  <input v-model="cancion.duracionTexto" type="number"
+                  <input v-model="cancion.duracionTexto" type="text" inputmode="numeric" pattern="[0-9]*:?[0-9]{0,2}"
                     class="terminal-input"
-                    placeholder="seg." />
+                    placeholder="3:45" @blur="formatearDuracionInput(cancion)" />
                 </td>
 
                 <td class="px-3 py-3">
@@ -229,6 +273,19 @@ async function guardarAlbum() {
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div class="mt-4 flex flex-col gap-2 border-t border-neutral-900 pt-4 sm:flex-row sm:items-end sm:justify-end">
+          <div class="w-full sm:w-24">
+            <label class="terminal-label">cantidad</label>
+            <input v-model="cantidadCancionesAAgregar" type="number" min="1" max="99" class="terminal-input" />
+          </div>
+
+          <button type="button"
+            class="terminal-btn-primary"
+            @click="agregarCanciones(cantidadCancionesAAgregar)">
+            + cancion
+          </button>
         </div>
       </div>
 

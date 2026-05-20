@@ -59,6 +59,37 @@ function prepNuevaCancion() {
   mostrarFormCancion.value = true
 }
 
+function formatearDuracionInput() {
+  const valor = String(nuevaCancion.value.duracionTexto ?? '').trim()
+
+  if (!valor) {
+    nuevaCancion.value.duracionTexto = ''
+    return
+  }
+
+  if (valor.includes(':')) {
+    const [minutos = '', segundos = ''] = valor.split(':')
+    nuevaCancion.value.duracionTexto = `${Number(minutos) || 0}:${segundos.padStart(2, '0').slice(0, 2)}`
+    return
+  }
+
+  const soloNumeros = valor.replace(/\D/g, '')
+
+  if (!soloNumeros) {
+    nuevaCancion.value.duracionTexto = ''
+    return
+  }
+
+  if (soloNumeros.length <= 2) {
+    nuevaCancion.value.duracionTexto = `0:${soloNumeros.padStart(2, '0')}`
+    return
+  }
+
+  const minutos = soloNumeros.slice(0, -2)
+  const segundos = soloNumeros.slice(-2)
+  nuevaCancion.value.duracionTexto = `${Number(minutos)}:${segundos}`
+}
+
 async function guardarNuevaCancion() {
   guardandoCancion.value = true
   errorCancion.value = null
@@ -131,7 +162,7 @@ async function guardarNuevaCancion() {
 
               <div class="mt-3 flex flex-wrap gap-2 text-sm text-neutral-500">
                 <span class="border border-neutral-800 px-2 py-1">
-                  anio={{ album.anio ?? 'null' }}
+                  año={{ album.anio ?? 'null' }}
                 </span>
 
                 <span class="border border-neutral-800 px-2 py-1">
@@ -185,8 +216,9 @@ async function guardarNuevaCancion() {
 
           <div>
             <label class="terminal-label">duracion</label>
-            <input v-model="nuevaCancion.duracionTexto" type="text" placeholder="3:45"
-              class="terminal-input" />
+            <input v-model="nuevaCancion.duracionTexto" type="text" inputmode="numeric"
+              pattern="[0-9]*:?[0-9]{0,2}" placeholder="3:45" class="terminal-input"
+              @blur="formatearDuracionInput" />
           </div>
 
           <div>

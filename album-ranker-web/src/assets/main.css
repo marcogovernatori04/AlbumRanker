@@ -19,6 +19,18 @@ body {
   color: #080a0b;
 }
 
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
 @layer components {
   .terminal-panel {
     @apply border border-neutral-800 bg-neutral-950/90;

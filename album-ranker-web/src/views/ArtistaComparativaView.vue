@@ -121,7 +121,7 @@ function getCancionPorIndice(album, index) {
                 <template v-if="getCancionPorIndice(album, index - 1)">
                   <div class="flex justify-center">
                     <span :title="getCancionPorIndice(album, index - 1).titulo" :class="[
-                      'inline-flex h-8 w-12 items-center justify-center border text-base font-semibold',
+                      'inline-flex h-8 w-14 items-center justify-center border text-base font-semibold',
                       clasePuntuacion(getCancionPorIndice(album, index - 1).puntuacion)
                     ]">
                       {{ formatearPuntuacion(getCancionPorIndice(album, index - 1).puntuacion) }}
